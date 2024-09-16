@@ -246,7 +246,7 @@ class ExpressionNode : public TreeNode {
   /* Evaluation Helper */
   typedef float SinglePrecision;
   typedef double DoublePrecision;
-  constexpr static int k_maxNumberOfSteps = 10000;
+  constexpr static int k_maxNumberOfSteps = 1000000;
   virtual Evaluation<float> approximate(
       SinglePrecision p,
       const ApproximationContext& approximationContext) const = 0;
